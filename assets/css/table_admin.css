@@ -1,0 +1,17 @@
+.n.desactivada{
+    cursor: pointer;
+}
+
+.n.desactivada.activa{
+    background-color: #500000
+}
+
+.get-number{
+    display: none;
+}
+
+.button-submit{
+    margin: auto;
+    width: 200px;
+}
+

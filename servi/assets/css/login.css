@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+  font-family: 'Outfit' sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.mi_wallper img {
+  width: 100%; /* Para que la imagen ocupe todo el espacio del contenedor */
+  top: 0; /* Posición vertical, ajusta según tu diseño */
+  left: 0; /* Posición horizontal, ajusta según tu diseño */
+}
+
+/***MY STYLE INPUTS**/
+
+.login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 16vw;
+  width: 100%;
+}
+
+.login-box{
+  background-color: #ececec;
+  border-image: linear-gradient(to right, #8b8b8b, #fff);
+  border-radius: 25px;
+  width: 500px;
+  padding: 0 50px;
+ 
+}
+
+.login-title{
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #000050;
+}
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.group{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.group input::placeholder{
+  text-align: center;
+  color: #cbcbcb;
+}
+
+.group input[type="text"],
+.group input[type="password"]{
+  padding: 25px;
+  border-radius: 50px;
+  border: #8b8b8b solid 1px;
+}
+
+.group button{
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: #000050;
+  border-radius: 50px;
+}
+
+.no-register h4{
+  text-align: center;
+  font-weight: 900;
+  color: #000050;
+}
+
+.no-register p{
+  text-align: center;
+}
+
+.login-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 0;
+  position: relative;
+}
+
+.login-desc h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.title{
+  position: relative;
+}
+
+.title img{
+  width: 500px;
+}
+
+.title p{
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+  font-weight: 800;
+}
+
+.login-container{
+  display: flex;
+  gap: 75px;
+}
+
+.purple{
+  color: #5500d5;
+}
+
+@media (max-width: 768px){
+  .login-desc{
+    display: none;
+  }
+
+  .login-box{
+    width: 350px;
+  }
+}

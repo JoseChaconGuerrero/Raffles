@@ -1,0 +1,147 @@
+.numbers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.page-link {
+    color: #0d6efd;
+    width: 50px !important;
+    text-align: center;
+    border: 1px #dee2e6 solid;
+    padding: 0.375rem 0.75rem;
+}
+
+
+.n {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #858585;
+    border-radius: 100%;
+}
+
+.n p {
+    color: #ffff;
+    font-weight: 900;
+}
+
+#cuerpo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.n {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.n:hover {
+    background-color: #686666;
+}
+
+.n.activa {
+    background-color: #000050;
+    color: white;
+}
+
+.n.desactivada {
+    background-color: #7a1717;
+    cursor: not-allowed;
+}
+
+
+button {
+    font-size: 16px !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+#items {
+    display: flex;
+}
+
+.page-item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.row-numbers {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#formulario {
+    margin: auto;
+}
+
+.button {
+    border-radius: 4px;
+    padding: 16px 24px 17px;
+    color: #fff;
+    border: none;
+    outline: 0;
+    background: #202020;
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: top;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    letter-spacing: normal !important;
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-appearance: none;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.blue {
+    background: #000050 !important;
+    color: #fff !important;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+}
+
+.active>.page-link, .page-link.active{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff
+}
+
+
+@media only screen and (max-width: 1080px) {
+    .page-item {
+        display: flex;
+        align-items: center;
+      }
+    
+      #items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    
+
+}
